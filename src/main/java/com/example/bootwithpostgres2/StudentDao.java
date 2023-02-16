@@ -14,7 +14,7 @@ public class StudentDao {
 
     public void createTable()
     {
-        String query = "create table student(id SERIAL PRIMARY KEY , name varchar(255) NOT NULL, ciy VARCHAR(255))";
+        String query = "create table student(id SERIAL PRIMARY KEY , name varchar(255) NOT NULL, city VARCHAR(255))";
         int update=this.jdbcTemplate.update(query);
         System.out.println(update);
     }
